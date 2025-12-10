@@ -1,0 +1,20 @@
+{
+  "rewrites": [
+    {
+      "source": "/src/C-Streak-Mentor-App.jsx",
+      "destination": "/index.html"
+    }
+  ],
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static-build"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/src/(.*)",
+      "dest": "/src/$1"
+    }
+  ]
+}
